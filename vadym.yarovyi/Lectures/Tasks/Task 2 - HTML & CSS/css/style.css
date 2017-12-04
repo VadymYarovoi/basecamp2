@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: url('fonts/UbuntuR.eot');
+    src: url('fonts/UbuntuR.eot') format('embedded-opentype'),
+         url('fonts/UbuntuR.woff2') format('woff2'),
+         url('fonts/UbuntuR.woff') format('woff'),
+         url('fonts/UbuntuR.ttf') format('truetype'),
+         url('fonts/UbuntuR.svg#UbuntuR') format('svg');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: UbuntuRegular;
+    background-color: #fdf5e6;
+}
+
+h2 {
+    color: #cc6c3e;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+progress {
+    background-color: #fff;
+    border: 1px solid #f9c89c;
+    color: #f9c89c;
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #fff;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #f9c89c;
+  }
+  
+  progress::-moz-progress-bar {
+    background-color: #f9c89c;
+  }
+
+
+#personal-info {
+    margin-top: 35px;
+}
+
+.profile-info {
+    width: 75%;
+    float: right;
+}
+
+.personal-data {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.personal-data div {
+    margin-left: 100px;
+}
+
+.personal-data img {
+    height: 15px;
+    margin-right: 10px;
+}
+
+.name-position {
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.name-position h1 {
+    text-transform: uppercase;    
+}
+
+.profile-photo {
+    width: 25%;
+    height: 25%;
+    z-index: 100;
+}
+
+.profile-photo img {
+    width: 300px;
+    margin-left: 35px;
+}
+
+#personal-skills,
+#education,
+#interests,
+#languages,
+#contact {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#personal-skills .skills {
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#education .education-blocks {
+    margin: auto;
+    width: 70%;
+    text-align: left;
+}
+
+#interests .interests-block{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#interests .interests-block .hobbie {
+    border: 1px solid #f9c89c;
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#languages .languages-block {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#contact form input,
+#contact form textarea {
+    border: 1px solid #cc6c3e;
+    padding-left: 5px;
+    outline: none;
+}
+
+#contact form input[type="email"] {
+    width: 254px;
+    height: 25px;
+}
+
+#contact form textarea {
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#contact form input[type="submit"] {
+    width: 260px;
+    height: 25px;
+    outline: none;
+    background-color: transparent;
+    color: #cc6c3e;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover {
+    color: #fff;
+    background-color: #cc6c3e;
+}
+
+.education-blocks,
+.interests-block,
+.languages-block {
+    border-bottom: 1px solid #f9c89c;
+    padding-bottom: 35px;
+}
