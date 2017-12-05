@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Task 1</title>
 </head>
+
 <body>
     <label><h1>Text area:</h1></label>
-    <textarea rows="10" cols="45"></textarea>
+    <textarea id='textBox' rows="10" cols="45"></textarea>
     <br>
-    <button>Calculate</button>
-    <p></p>
+    <button id='calc'>Calculate</button>
+    <p id='show'>
+        Number of words: <span id='numOfWords'></span><br> 
+        Length of the maximal word: <span id='lengthMax'></span><br> 
+        Length of the minimum word: <span id='lengthMin'></span><br> 
+        Average length of words: <span id='average'></span>
+    </p>
     <script src="task1.js"></script>
 </body>
+
 </html>
