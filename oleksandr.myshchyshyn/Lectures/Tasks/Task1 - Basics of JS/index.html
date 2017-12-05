@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 38%;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .btn {
+            position: absolute;
+            right: 9px;
+            bottom: -40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Text Area :</h1>
+        <textarea name="message" id="msg" cols="60" rows="10"></textarea>
+        <button class="btn" id="btn">Calculate</button>
+
+        <div class="result">
+            <p>Number of words: <span id="num"></span></p>
+            <p>Length of the maximal word: <span id="max"></span></p>
+            <p>length of the minimum word: <span id="min"></span></p>
+            <p>Average length of words: <span id="average"></span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
