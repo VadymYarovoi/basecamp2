@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 1</title>
+    <style>
+        body, html{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            padding: 0;
+            margin: 0;
+        }
+        .wrapper{
+            width: 550px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        #text{
+            width: 100%;
+            min-height: 300px;
+            margin-bottom: 10px;
+        }
+        #calculater{
+            display: inline-block;
+            margin: 0 0 10px 484px;  
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <label for="text"><h1>Text area:</h1></label>
+    <textarea name="text" id="text"></textarea>
+
+    <button id="calculater">Calculate</button>
+    <p>Numbers of words: < <span id="number"></span> ></p>
+    <p>Length of the maxsimal word: < <span id="max-word"></span> ></p>
+    <p>Length of the minimum word: < <span id="min-word"></span> ></p>
+    <p>Average length of words: < <span id="average-length"></span> ></p>
+    </div>
+<script src="task1.js"></script>
+</body>
+</html>
