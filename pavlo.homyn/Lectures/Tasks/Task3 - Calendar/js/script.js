@@ -84,6 +84,9 @@ function today() {
 function drawFirstCalendarDays() {
     let date = new Date(currentYear, currentMonth, 1),
         weekday = date.getDay();
+    if (weekday === 0) {
+        weekday = 7;
+    }
     date.setMonth(date.getMonth(), 0);    
     let lastDay = date.getDate();    
     for (weekday; weekday > 0; weekday--, lastDay--) {        
