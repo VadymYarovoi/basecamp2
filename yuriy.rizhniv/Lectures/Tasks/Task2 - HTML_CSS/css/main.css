@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
+
+/*============== main styles =============*/
+a:link, a:visited, a:active{cursor: pointer; text-decoration: none; outline: none;}
+a {text-decoration:none; outline:none; transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;-webkit-transition: all 0.3s ease-in;-ms-transition: all 0.3s ease-in; color: #ff9002;}
+a:hover{opacity: 0.5;}
+ul {list-style: none;}
+.clear{clear: both;}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../img/bg.jpg);
+	font-family: 'Libre Baskerville', serif;
+}
+h2{
+	line-height: 60px;
+}
+
+.up_block{
+	display: none;
+}
+
+/*============== header styles =============*/
+.header{
+	width: 80%;
+	margin: 0 auto;
+	padding: 15px 0 0 0;
+}
+.header h1{
+	color: #c1c1c1;
+	margin: 0 auto;
+}
+
+.container{
+	display: block;
+}
+.block{
+	flex-basis: 100%;
+}
+
+
+.flex-container-1>div, .flex-container-2>div{
+	margin: 10px;
+	padding: 20px 0;
+}
+.flex-item{
+	background: #fff;
+}
+.box{
+	margin: 30px;
+}
+.box span{
+	display: inline-block;
+	margin: 0 5px 10px 0;
+}
+.box p{
+	display: inline-block;
+}
+.title{
+	background: #3d3d3d;
+	width: 100%;
+	min-height: 35px;
+	padding: 22px 0 0 20px;
+	margin: 10px 0 10px -10px;
+	font: bolder 16px Arial, Helvetica, Sans-Serif;
+	color: #FFFFFF;
+}
+
+/*============== avatar styles =============*/
+.image{
+	display: block;
+	margin: 20px auto;
+}
+
+/*============== contact styles =============*/
+#contactForm input, #contactForm textarea{
+	width: 100%;
+	background: #f5f5f5;
+	border: 1px solid #D5D5D5;
+	padding: 10px;
+	margin: 10px 0 20px;
+	box-sizing: border-box;
+}
+
+#contactForm button{
+	width: 100%;
+	color: #fff;
+	background: #191919;
+	line-height: 40px;
+	border: none;
+}
+
+/*============== education block =============*/
+.education .box{
+	margin-bottom: 20px;
+}
+
+/*============== languages block =============*/
+.languages ul li{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.languages.box span{
+	margin: 0;
+}
+
+/*============== interest block =============*/
+.interest ul li:hover{
+	color: orange;	
+	cursor: default;
+}
+
+/*============== skills block =============*/
+.skills{
+	width: 70%;
+}
+.skills progress{
+	margin-bottom: 13px;
+}
+.skills span{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.checked {
+    color: orange;
+}
+.lang{
+	width: 25%;
+	float: left;
+}
+.progresses{
+	float: left;
+}
+
+/*============== footer styles =============*/
+.footer{
+	width: 80%;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+.footer_text{
+	color: #c1c1c1;
+}
+
+
+@media (min-width: 999px){
+	/*============== main styles =============*/
+	.container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.block{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 40%;
+		margin: 10px;
+	}
+
+	/*============== UP button =============*/
+	.up_block{
+		position: fixed;
+		width: 30px;
+		height: 100vh;
+		font-size: 20px;
+	}
+	.up_block{
+		display: block;
+	}
+	.up_block:hover{
+		background: #c1c1c1;
+	}
+	.up_block i{
+		display: block;
+		text-align: center;
+	}
+}
+
+
+@media (min-width: 700px) and (max-width: 998px){
+	.container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.block{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 50%;
+		margin: 10px;
+	}
+	.box{
+		margin: 10px;
+	}
+	.skills{
+		width: 100%;
+	}
+}
