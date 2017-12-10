@@ -1,0 +1,105 @@
+:root{
+	--color: #C592B7;
+	--lighter-color: #Cf9fBf;
+	--lightest-color: #DfAfCf;
+	--cell-width: 14.28%;
+	--cell-height: 15.03%;
+}
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 20pt;
+	font-family: sans-serif;
+	font-weight: 300;
+	color: #fee;
+}
+.light-bg{
+	background: var(--lighter-color);
+}
+.hoverable:hover{
+	background: var(--lightest-color);
+	transition: all .3s ease-in-out;
+}
+.calendar{
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+	box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.2);
+	border: 1px solid #fdd;
+	overflow: hidden;
+}
+.calendar:hover{
+	cursor: pointer;
+}
+.month-router{
+	background: var(--color);
+	width: 100%;
+	height: 100%;
+}
+.router-head{
+	height: 10%;
+	border-bottom: 1px solid #fdd;
+}
+.title{
+	line-height: 200%;
+	height: 100%;
+	width: 70%;
+	font-size: 20pt;
+	float: left;
+	text-align: center;
+}
+.button{
+	height: 100%;
+	width: 15%;
+	border: none;
+	font-size: 50%;
+	outline: none;
+}
+.button.left{
+	float:left;
+}
+.button.right {
+	float:right;
+}
+.router-body{
+	height: 90.75%;
+}
+.week-days{
+	padding: 1% 0 1% 0;
+}
+.week-days > div{
+	display: inline-block;
+	width: var(--cell-width);
+	text-align: center;
+	font-size: 14pt;
+}
+.date-container > .weekend{
+	color: #ffbaba;
+	box-shadow: inset 0px 0px 0px 1px #faa;
+}
+.date-container > .today{
+	box-shadow: inset 0px 0px 10px 1px rgba(180,150,155,0.75);
+	color: white;
+	background: var(--lightest-color);
+}
+.date-container{
+	height: 100%;
+	width: 100%;
+	transition: all .3s ease-in-out;
+}
+.date-container > div{
+	display: inline-block;
+	text-align: center;
+	height: var(--cell-height);
+	width: var(--cell-width);
+	box-shadow: inset 0px 0px 0px .5px var(--lighter-color);
+}
+.date-container > div:hover{
+	box-shadow: inset 0px 0px 0px 1px #faa;
+}
+.router-body > .date-container.slide-left{
+	margin-left: -100%;
+}
+.router-body > .date-container.slide-right{
+	margin-left: +100%;
+}
