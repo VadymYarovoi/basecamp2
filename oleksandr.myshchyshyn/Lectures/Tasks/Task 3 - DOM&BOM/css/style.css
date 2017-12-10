@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+th.previous,
+th.next,
+td.calendar-day {
+    cursor: pointer;
+}
+
+table {
+    background: transparent;
+    border-spacing: 0;
+    text-align: center;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+}
+
+div {
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+td.calendar-weekday {
+    color: #ff0039;
+    font-weight: 600;
+}
+
+.weekday {
+    color: rgb(170, 33, 33);
+}
+
+.not-current-month {
+    color: #b9b4b4;
+}
+
+td.calendar-weekday {
+    width: 7%;
+}
+
+.highlight {
+    background-color: lightskyblue;
+    color: aliceblue;
+}
