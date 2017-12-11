@@ -1,4 +1,5 @@
 /* main styles */
+
 .container  {
     width: 365px;
     margin: 0 auto;
@@ -26,6 +27,7 @@
 }
 
 /* styles for dynamic created data */
+
 .day-cell {
     color: #404040;
     display: inline-block;

@@ -1,4 +1,5 @@
 /* call main function when page is loaded */
+
 window.addEventListener('load', function generateCells() {
     var i;
     for(i = 0; i < daysArray.length; i++) {
