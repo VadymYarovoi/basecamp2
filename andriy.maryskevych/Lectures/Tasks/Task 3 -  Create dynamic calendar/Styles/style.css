@@ -1,0 +1,99 @@
+body{
+    height: 200px;
+}
+#calendar{
+    width: 400px;
+    height: 100%;
+    background-color: rgb(50, 111, 192);
+    margin: 20 auto 0 auto; 
+}
+#header{
+    width: 100%;
+    height: 30px;
+    background-color: darkblue;
+}
+#weekDay{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed
+}
+#weekDay, th {
+    border: 1px solid rgb(85, 62, 62);
+    font-size: 12;
+}
+th {
+    height: 30px;
+}
+.dayBlock{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: greenyellow;
+    border: 1px solid black;
+}
+.mainDIV{
+    position:relative;
+    background:yellow;
+    width:100%;
+}
+#left{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:10%;
+    background:rgb(182, 214, 108);
+}
+#date{
+    height:100%;
+    width:80%;
+    background:rgb(152, 152, 218);
+    margin:0px auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+#right{
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:100%;
+    width:10%;
+    background:rgb(182, 214, 108);
+}
+.arrow{
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+}
+.day{
+    height: 20px;
+    border: 1px solid white;
+    text-align: center;
+    vertical-align: middle;
+}
+.gray{
+    background-color: gray;
+}
+.current{
+    background-color: green;
+}
+#content{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+#content td{
+    border: 1px solid lightgrey;
+    border-top: none;
+}
+.weekend{
+    background-color: rgb(141, 51, 51);
+}
+.today{
+    background-color: yellow;
+}
+.clicked{
+    background-color: rgb(40, 160, 207);
+    color: white;
+}
