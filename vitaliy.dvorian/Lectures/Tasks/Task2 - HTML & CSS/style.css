@@ -1,0 +1,322 @@
+/*
+=============== GLOBAL STYLE ===============
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    min-height: 1400px;
+    width: 1010px;
+    margin: auto;
+    background-color: beige;
+    -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+body {
+    background-color: #E1F0F5;
+}
+
+/*
+=============== LEFT SIDE ===============
+*/
+
+.left {
+    float: left;
+    position: relative;
+    width: 300px;
+    min-height: 1400px;
+    background-color: #454449;
+}
+
+.foto {
+    height: 200px;
+    width: 200px;
+    margin: 100px auto 0;
+    background-image: url(img/avatar.png);
+    border-radius: 100px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+    height: 20px;
+    width: 200px;
+    margin: auto;
+    text-transform: uppercase;
+    border: solid white 2px;
+    margin: 50px auto 0;
+}
+
+
+
+.titleText {
+    width: 210px;
+    color: white;
+    font-style: italic;
+    word-spacing: 5px;
+    line-height: 23px;
+    margin: 25px auto 0;
+}
+
+
+.social a {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    margin: 30px;
+    background-image: url(img/SocialSprite.png);
+}
+
+
+.social {
+    margin: 40px 0;
+}
+
+/*
+=============== POSITION SPRITE ===============
+*/
+
+.fb {
+    background-position: 96px 0;
+}
+
+.skype {
+    background-position: 32px 0;
+}
+
+.tg {
+    background-position: 64px 0;
+}
+
+
+/*
+=============== RIGHT SIDE ===============
+*/
+
+
+.right {
+    position: relative;
+    display: inline-block;
+    width: 710px;
+    min-height: 1400px;
+    background-color: #DFDEE3;
+}
+
+/*
+=============== FOR ME ===============
+*/
+
+.me {
+    margin-top: 45px;
+    height: 210px;
+    background-color: #CAC8C8;
+    text-transform: uppercase;
+    color: #454449;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.me h1 {
+    color: #454449;
+    line-height: 210px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    height: 130px;
+}
+
+.me span {
+    letter-spacing: 2px;
+    color: #7DB5D3;
+}
+
+
+
+.contact {
+    width: 610px;
+    height: 170px;
+    margin: auto;
+}
+
+.contactL {
+    float: left;
+    width: 215px;
+    height: 170px;
+    border-left: solid 3px #454449;
+    border-bottom: solid 3px #454449;
+}
+
+.contactR {
+    float: left;
+    width: 380px;
+    height: 170px;
+    border-left: solid 3px #454449;
+    border-bottom: solid 3px #454449;
+}
+
+.contact h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0 0 20px;
+    color: #7DB5D3;
+}
+
+.contact p {
+    margin: 20px 0 0 20px;
+    font-size: 16px;
+    line-height: 17px;
+    float: left;
+}
+
+.contactR p {
+    line-height: 20px;
+}
+
+/*
+=============== WORK ===============
+*/
+
+.experience {
+    float: left;
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 70px 0 0 60px;
+}
+
+.line {
+    border-bottom: 2px solid black;
+    width: 290px;
+    float: left;
+    height: 80px;
+}
+
+
+.work {
+    margin: 155px 0 0 65px;
+    width: 580px;
+    height: 55px;
+}
+
+.work p {
+    margin-top: 30px;
+}
+
+.line3 {
+    border-bottom: 2px solid black;
+    width: 320px;
+    float: left;
+    height: 80px;
+    margin-left: 30px;
+}
+
+.position {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.companyName {
+    display: block;
+    color: #7DB5D3;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.line2 {
+    margin: 212px 0 0 -180px;
+    border-bottom: 2px solid black;
+    width: 470px;
+    float: left;
+    height: 0px;
+}
+
+.location {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -40px;
+    float: right;
+}
+
+.location::before {
+    background: url(img/SocialSprite.png);
+    content: " ";
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    margin: 0 0 0 -50px;
+}
+
+/*
+==== SKILLS ====
+*/
+
+.skills {
+    margin-top: 200px;
+}
+
+
+progress {
+    margin-top: 15px;
+}
+
+.html {
+    margin: 260px 0 0 60px;
+}
+
+.progress {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    width: 150px;
+    text-transform: uppercase;
+}
+
+.css {
+    margin: -50px 0 0 270px;
+}
+
+.javascript {
+    margin: -50px 0 0 480px;
+}
+
+/*
+=============== COMMUNICATIONS ===============
+*/
+
+.comunication {
+    width: 250px;
+}
+
+.feedback {
+    margin: 140px 0 0 150px;
+}
+
+.feedback textarea {
+    resize: none;
+}
+
+.feedback p {
+    margin-top: 5px;
+}
+
+.feedback input[type='submit'] {
+    padding: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
