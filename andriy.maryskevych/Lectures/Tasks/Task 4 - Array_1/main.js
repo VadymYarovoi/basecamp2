@@ -108,8 +108,8 @@ function SymmetricalDifference(arrayOne, arrayTwo)
  */
 function generateArr(arrSize)
 {
-    var res = new Array(arrSize);
-    for(var i = 0; i < arrSize; i++)
+    var res = new Array(arrSize), i;
+    for(i = 0; i < arrSize; i++)
     {
         res[i] = Math.round(Math.random() * (arrSize * 10));
     }
@@ -125,11 +125,12 @@ function generateArr(arrSize)
  */
 Array.prototype.Includes = function(elem, position = 0)
 {
+    var i;
     if(Number.isNaN(elem))
     {
         if(position < this.length)
         {
-            for(var i = position; i < this.length; i++)
+            for(i = position; i < this.length; i++)
             {
                 if(Number.isNaN(this[i]))
                 {
