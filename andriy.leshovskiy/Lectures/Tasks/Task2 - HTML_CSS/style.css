@@ -1,0 +1,116 @@
+.wrap {
+    margin: -10px 100px -10px 100px;
+    padding: 20px 0;
+    background-image: url(blackBackground.jpg);
+    background-attachment: fixed;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+}
+
+.wrap img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin-left: 15px;
+}
+
+.flex-block {
+    margin-top: -20px;
+}
+
+h1,
+h2,
+h3 {
+    color: darkgray;
+    text-align: center;
+}
+
+.flex-container .flex-block p {
+    color: darkgray;
+    text-align: left;
+    margin: 0 100px;
+}
+
+.flex-container .flex-block p:last-child {
+    margin-bottom: 15px;
+}
+
+.wrap .flex-container .flex-block .mainInfo {
+    color: aliceblue;
+}
+
+.wrap .flex-container .flex-block .skills {
+    margin-bottom: -40px;
+    color: aliceblue;
+}
+
+.wrap .flex-container .flex-block .interests {
+    width: 195px;
+    padding: 20px;
+    border: 4px double darkgray;
+}
+
+.wrap .contactInfo button {
+    padding: 5px 30px;
+}
+
+.wrap .contactInfo button:hover {
+    cursor: pointer;
+}
+
+.wrap .contactInfo textarea {
+    overflow: auto;
+}
+
+.wrap .contactInfo {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrap .contactInfo input,
+textarea {
+    width: 250px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.contactInfo input,
+textarea:focus {
+    outline: none;
+}
+
+/*
+*Progress bar 
+*/
+.wrap .flex-container .flex-block progress {
+    width: 300px;
+    height: 14px;
+    margin: 50px auto;
+
+    -webkit-appearance: none;
+
+}
+
+/*
+*Progress bar color gradient
+*/
+.wrap .flex-container .flex-block progress::-webkit-progress-value {
+
+    background-image: -webkit-linear-gradient(
+    transparent 33%, rgba(0, 0, 0, .1) 33%,
+    rgba(0, 0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top,
+    rgba(255, 255, 255, .25),
+    rgba(0, 0, 0, .25)),
+    -webkit-linear-gradient(left, black, darkgray, white);
+
+    border-radius: 1px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}

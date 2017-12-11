@@ -1,0 +1,410 @@
+/* Constants */
+:root {
+  	--main-color: #8EA7B2;
+  	--color: /*#B3C6CE*/#bbc8cf;
+  	--light-color:/* #CDDBE1*/#E1E7EA;
+}
+
+/* Default */
+*{
+	padding: 0;
+	margin: 0;
+	cursor: default;
+}
+
+body{
+	background-attachment: fixed;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	background: var(--color);
+}
+
+/* Class for header and footer */
+.headFoot{
+	background: var(--main-color);
+}
+header{
+	border-radius: 10px 10px 0 0;
+	height: 130px;
+}
+footer{
+	border-radius: 0 0 10px 10px;
+	height: 50px;
+}
+label{
+	color: var(--main-color);
+}
+a{
+	color: var(--main-color);
+	text-decoration-line: none;
+}
+a:hover{
+	cursor: pointer;
+}
+
+.clearfix:after{
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+/* Container of all content */
+.container{
+	width: 45em;
+	background: #fff;
+	margin: auto;
+	border-radius: 10px;
+	color: var(--color);
+}
+.content{
+	margin-top: -20%;
+	padding: 3%;
+	overflow: hidden;
+}
+
+/* Photo and main info */
+.top{
+	margin-bottom: 1%;
+}
+.column{
+	float: left;
+	box-sizing: border-box;
+	padding: 3%;
+}
+
+/* Column for photo */
+.column.left{
+	width: 35%; 	
+}
+/* Column for main info */
+.column.right{
+	width: 65%;
+}
+
+/* Photo's style */
+.photo{
+	background: var(--light-color);
+	width: 12em;
+	height: 12em;
+	border-radius: 50%;
+	border: 3px solid var(--light-color);
+	overflow: hidden;
+	text-align: center;
+}
+.photo img{
+	max-width: 100%;
+	max-height: 100%;
+	transform: scale(1.5,1.5);
+}
+.photo i{
+	margin-top: 50%;
+	line-height: 200%;
+	transform: scale(10,10);
+}
+
+/* Main-info's style */
+.main-info{
+	margin-top: 22px;
+}
+.person-name{
+	font-size: 25pt;
+	color: var(--color);
+	margin: 1%;
+}
+.contacts{
+	border: 2px solid var(--color);
+	border-radius:  0px 0px 10px 10px;
+	background: white;
+}
+.contacts > .info:last-child > .info-name{	/* Corrects form of the last element of contacts */
+	border-radius:  0px 0px 0px 8px;
+}
+.adress{
+	border: 2px solid var(--color);
+	border-radius:  10px 10px 0px 0px;
+}
+.info{
+	margin: 1px;
+	display: flex;
+	align-items: center;
+	line-height: 12pt;
+}
+.info-name{
+	float: left;
+	width: 15%;
+	background: var(--light-color);
+	text-align: center;
+	line-height: 14pt;
+}
+.info-name > span{
+	font-size: 14pt;
+	line-height: 22pt;
+}
+.adress > .info > .info-value{	/* Changes style for concrete element, not for all .info-value*/
+	color: var(--color);
+}
+.adress > .info > .info-name{
+	border-radius: 8px 0px 0px 0px ;
+	background: var(--color);
+	color: var(--main-color);
+}
+.info-value{
+	width: 80%;
+	padding-left: 5%;
+	color: var(--main-color);
+}
+ 
+ /* Title of chapter */
+.title{
+	display: block;
+	font-size: 20pt;
+	height: 22pt;
+	text-align: center;
+	box-shadow: 0 1px 15px 0px var(--color);
+	margin-bottom: 20px;
+	background: white;
+}
+
+/* Base class for all chapters */
+.chapter{
+	border-top: 1px solid;
+	display: block;
+	padding: 3%;
+}
+.chapter:hover{
+	box-shadow: 0 1px 10px 0px var(--light-color);
+}
+
+/* Skills chapter */
+.skills{
+	background: var(--light-color);
+}
+.skill{
+	height: 15px;
+	width: 30%;
+	display: inline-flex;
+	align-items: center;
+}
+.skill-name{
+	float: left;
+	min-width: 40%;
+	height: 100%;
+	text-align: right;
+	margin-right: 3%;
+	color: var(--main-color);
+}
+.skill-power{
+	float: left;
+	height: 50%;
+	width: 60%;
+	border: 1px solid var(--main-color);
+	border-radius: 5px;
+	background: white;
+}
+.percents{
+	background: var(--main-color);
+	height: 100%;
+	width: 0%;
+	border-radius: 5px;
+}
+
+/* Education chapter */
+.education{
+	padding: 3% 5% 3% 5%;
+}
+.education-item{
+	background: var(--light-color);
+	color: var(--main-color);
+	padding: 1% 3% 1% 3%;
+	margin-bottom: 1px;
+	border-radius: 10px;
+}
+.education-item > .head{
+	font-size: 14pt;
+	display: inline-block;
+	margin-bottom: 1%;
+}
+.education-item:before{
+	content: "";
+	position: absolute;
+    height: 10px;
+    width: 10px;
+    background: white;
+	color: white;
+	margin-left: -25px;
+	margin-top: -10px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+}
+.education-item:after{
+	content: "";
+	float: right;
+	position: absolute;
+    height: 10px;
+    width: 10px;
+    background: white;
+	color: white;
+	margin-left: 36.3em;
+	margin-top: -57.5px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+}
+.education-years{
+	color: var(--color);;
+}
+.education-description{
+	display: block;
+	font-size: 13pt;
+}
+
+/* Interests chapter */
+.interests-container{
+	padding-left: 1%;
+}
+.interests-item{
+	width: 18%;
+	height: 2em;
+	background: var(--main-color);
+	display: inline-block;
+	line-height: 2em;
+	margin: 0 0 1% 1%;
+	border-radius: 5px;
+	vertical-align: middle;
+	text-align: center;
+	color: #eee;
+}
+.interests-item:hover{
+	background: var(--color);
+	cursor: default;
+}
+
+/* Languages chapter */
+.languages{
+	text-align: center;
+}
+.languages-content{
+	display: inline;
+	align-items: left;
+}
+.language{
+	display: inline-block;
+	margin: 1%;
+	border: 1px solid var(--light-color);
+	//background: var(--light-color);
+	box-shadow: 0 3px 10px 0px var(--main-color);
+	padding: 1%;
+}
+.language-name{
+	color: var(--main-color);
+}
+.language-power {
+  	unicode-bidi: bidi-override;
+  	direction: rtl;
+  	font-size: 20pt;
+}
+.language-power > span {
+  	display: inline-block;
+  	position: relative;
+  	width: 1.1em;
+}
+.language-power > .selected:before,
+.language-power > .selected ~ span:before {
+   	content: "\2605";
+   	position: absolute;
+   	color: /*var(--main-color)*/ #ffa31a;
+}
+
+/* Feedback chapter */
+.feedback{
+	font-size: 14pt;
+	text-align: center;
+	background: var(--light-color);
+}
+.feedback-email{
+	display: inline-flex;
+	align-items: center;
+	width: 50%;
+	border-radius: 5px;
+	padding: 1%;
+	background: var(--color);
+}
+.frameHover:hover{
+	box-shadow: 0px 0px 1px 1px var(--main-color);
+}
+/* Base class for all inputs*/
+.inputTheme{
+	border-radius: 5px;
+	border: none;
+	background: var(--light-color);
+	line-height: 18pt;
+	margin: 1%;
+	padding: 1%;
+	box-shadow: inset 0px 0px 50px 25px rgba(255,255,255,0.75);
+}
+.feedback-message{
+	border-radius: 10px;
+	margin: 3%;
+	padding: 1% 1% 3% 1%;
+	background: var(--color);
+	width: 50%;
+	margin-left: 24%;
+}
+.feedback > .tittle{
+	background: var(--main-color);
+	color: var(--light-color);
+}
+.feedback-email > label{
+	margin-left: 3%;
+}
+.feedback-message > label{
+	width: 95%;
+	display: inline-block;
+	text-align: left;
+}
+.feedback-message > textarea{
+	width: 90%;
+	height: 6em;
+	line-height: 12pt;
+	font-size: 12pt;
+	color: var(--main-color);
+	resize: none;
+	padding: 3%;
+}
+.feedback-email > input:focus, .feedback-message > textarea:focus{
+	outline-color: var(--main-color);
+}
+.feedback-email > input{
+	padding: 1%;
+	width: 60%;
+	font-size: 12pt;
+	color: var(--main-color);
+}
+/* Button's style */
+.submit{
+	height: 40px;
+	width: 40px;
+	border: 1px solid var(--color);
+	border-radius: 50%;
+	color: var(--main-color);
+	font-size: 8pt;
+	outline: none;
+	float: right;
+	margin-right: 2%;
+	display: flex;
+	align-items: center;
+}
+.submit:hover{
+	background: var(--main-color);
+	color: white;
+}
+.submit:active{
+	background: var(--color);
+	color: white;
+	border: 1px solid var(--main-color);
+}
+.submit > i {
+	width: 100%;
+}
