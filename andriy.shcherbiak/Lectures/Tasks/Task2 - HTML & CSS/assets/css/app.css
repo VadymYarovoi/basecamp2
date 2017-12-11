@@ -1,0 +1,321 @@
+@charset "UTF-8";
+body {
+  line-height: 1.42; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+body {
+  background: url("../img/bg.jpg") center no-repeat;
+  background-size: cover; }
+
+.container {
+  max-width: 950px;
+  margin: 30px auto;
+  background-color: #fff;
+  border: 2px solid #D7D7D5; }
+/************ GLOBAL styles ******************/
+.title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: #E39F6F;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+/*************************** HEADER **********************/
+.header {
+  border-left: 40px solid #FFC292;
+  text-align: right;
+  margin-top: 20px; }
+
+.contacts {
+  padding: 10px; }
+  .contacts-adress {
+    margin-left: 50px; }
+  .contacts-mail {
+    margin-left: 50px; }
+/************************* AVATAR section *************/
+.image-wrap {
+  float: left;
+  margin-left: 40px;
+  margin-top: -30px; }
+
+.image-box {
+  width: 250px;
+  height: 250px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  overflow: hidden; }
+  .image-box .avatar__img {
+    width: 100%; }
+
+.description-wrap {
+  float: left;
+  margin-left: 70px;
+  margin-top: 45px; }
+  .description-wrap .myname {
+    font-size: 3.5rem;
+    text-shadow: 0px 2px 0px rgba(255, 255, 255, 0.8), 2px 3px 0px rgba(0, 0, 0, 0.5); }
+  .description-wrap .my-spec {
+    margin: 0;
+    font-size: 2rem;
+    color: #E39F6F;
+    font-weight: bold; }
+/***************************** SKILLS section **************/
+.skills {
+  border-left: 40px solid #FFC292; }
+  .skills-wrap {
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .skills-icon {
+    width: 10%;
+    float: left; }
+    .skills-icon__img {
+      width: 50px; }
+  .skills-content {
+    float: right;
+    width: 90%;
+    border-bottom: 1px solid #FFC292; }
+
+
+.skills-content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 0; }
+
+.skills-content__item {
+  width: 30%; }
+  .skills-content__item span {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px; }
+    .skills-content__item span:last-child {
+      margin-right: 0; }
+
+progress {
+  background-color: #f3f3f3;
+  border: 0;
+  height: 20px;
+  border: 1px solid #FFC292;
+  text-align: rigth; }
+
+progress::-webkit-progress-bar {
+  background-color: #fff; }
+
+progress::-webkit-progress-value {
+  background-color: #FFC292; }
+/******************* EDUCATION section *****************/
+.education {
+  border-left: 40px solid #FFC292; }
+  .education-wrap {
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .education-icon {
+    width: 10%;
+    float: left; }
+    .education-icon__img {
+      width: 50px; }
+  .education-content {
+    float: right;
+    width: 90%;
+    border-bottom: 1px solid #FFC292;
+    text-align: left; }
+
+.category {
+  margin-bottom: 30px; }
+  .category__title {
+    font-weight: bold;
+    font-size: 1.3rem; }
+  .category__years {
+    font-weight: bold; }
+/************ INTERESTS section ******************/
+.interests {
+  border-left: 40px solid #FFC292; }
+  .interests-wrap {
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .interests-icon {
+    width: 10%;
+    float: left; }
+    .interests-icon__img {
+      width: 50px; }
+  .interests-content {
+    float: right;
+    width: 90%;
+    border-bottom: 1px solid #FFC292;
+    text-align: left; }
+
+
+.interests-content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 0; }
+
+.interests-content__item {
+  width: 22%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .9rem;
+  border: 1px solid #FFC292;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px; }
+/************ LANGUAGES section ******************/
+.languages {
+  border-left: 40px solid #FFC292; }
+  .languages-wrap {
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .languages-icon {
+    width: 10%;
+    float: left; }
+    .languages-icon__img {
+      width: 50px; }
+  .languages-content {
+    float: right;
+    width: 90%;
+    border-bottom: 1px solid #FFC292;
+    text-align: left; }
+
+
+.languages-content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 0; }
+
+.stars {
+  display: inline-block;
+  font-size: 35px;
+  line-height: 25px;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  margin-top: 4px;
+  color: #FFC292; }
+
+.stars:after {
+  content: "☆☆☆☆☆"; }
+
+.stars--large {
+  font-size: 25px; }
+
+.stars span {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.stars span:after {
+  content: "★★★★★"; }
+/************ EMAIL section ******************/
+.email {
+  border-left: 40px solid #FFC292; }
+  .email-wrap {
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .email-icon {
+    width: 10%;
+    float: left; }
+    .email-icon__img {
+      width: 50px; }
+  .email-content {
+    float: right;
+    width: 90%;
+    text-align: left; }
+
+.send-form {
+  max-width: 500px;
+  margin: 50px auto; }
+
+.e-mail {
+  outline: none;
+  border: 1px solid #FFC292;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%; }
+
+.textmsg {
+  height: 150px;
+  border: 1px solid #FFC292;
+  width: 100%;
+  outline: none;
+  padding: 10px; }
+
+label {
+  display: block; }
+
+.submit {
+  float: right;
+  padding: 5px 25px;
+  background-color: #FFC292;
+  border: none; }
+  .submit:hover {
+    background-color: #ffb479; }
+/************ FOOTER ******************/
+.footer {
+  height: 50px;
+  border-left: 40px solid #FFC292;
+  margin-top: 50px; }
+

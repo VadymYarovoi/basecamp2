@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info-page</title>
+    <link rel="stylesheet" href="assets/css/foundation.css"> <!-- normalize.css -->
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="contacts">
+                <span class="contacts-number">+380665362192</span>                         
+                <span class="contacts-adress">Lviv, Ukraine</span>
+                <span class="contacts-mail">andriyshcherbyak@gmail.com</span>
+            </div>
+        </header>
+        <section class="avatar">
+            <div class="avatar-box clearfix">
+                <div class="image-wrap">
+                    <div class="image-box">
+                        <img src="assets/img/avatar.jpg" alt="avatar" class="avatar__img">
+                    </div>
+                </div>
+                <div class="description-wrap">
+                    <h1 class="myname">Andriy Shcherbyak</h1>
+                    <p class="my-spec">Student / Front-end developer</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skills-wrap clearfix">
+            <div class="skills-icon"><img src="assets/img/invention.svg" alt="skils" class="skills-icon__img"></div>
+            <div class="skills-content">
+                <h2 class="title">Personal Skills</h2>
+                <ul class="skills-content__list">
+                    <li class="skills-content__item">
+                        <span>HTML</span>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li class="skills-content__item">
+                        <span>CSS</span>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li class="skills-content__item">
+                        <span>JavaScript</span>
+                        <progress value="55" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            </div>   
+        </section>
+        <section class="education">
+            <div class="education-wrap clearfix">
+                <div class="education-icon"><img src="assets/img/students-cap.svg" alt="education" class="education-icon__img"></div>
+                <div class="education-content">
+                        <h2 class="title">Education</h2>
+                        <div class="category">
+                            <p class="category__title">Hight School</p>
+                            <p class="category__years">(2004-2015)</p>
+                            <p class="category__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni natus illo a obcaecati repudiandae nemo laboriosam. Sequi tempore voluptatibus officiis aspernatur quisquam. Necessitatibus ut praesentium quam sit, architecto libero officiis, nesciunt odit facilis magnam consequatur totam obcaecati iste?</p>
+                        </div>
+                        <div class="category">
+                                <p class="category__title">University</p>
+                                <p class="category__years">(2015-2019)</p>
+                                <p class="category__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni natus illo a obcaecati repudiandae nemo laboriosam. Sequi tempore voluptatibus officiis aspernatur quisquam. Necessitatibus ut praesentium quam sit, architecto libero officiis, nesciunt odit facilis magnam consequatur totam obcaecati iste?</p>
+                        </div>
+                        <div class="category">
+                                <p class="category__title">Master</p>
+                                <p class="category__years">(2019-2021)</p>
+                                <p class="category__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni natus illo a obcaecati repudiandae nemo laboriosam. Sequi tempore voluptatibus officiis aspernatur quisquam. Necessitatibus ut praesentium quam sit, architecto libero officiis, nesciunt odit facilis magnam consequatur totam obcaecati iste?</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="interests">
+            <div class="interests-wrap clearfix">
+                <div class="interests-icon"><img src="assets/img/diamond.svg" alt="interests" class="interests-icon__img"></div>
+                <div class="interests-content">
+                        <h2 class="title">Interests</h2>
+                        <ul class="interests-content__list">
+                            <li class="interests-content__item">
+                                Reading
+                            </li>
+                            <li class="interests-content__item">
+                                Guitar
+                            </li>
+                            <li class="interests-content__item">
+                                Programing
+                            </li>
+                            <li class="interests-content__item">
+                                Sport
+                            </li>
+                            <li class="interests-content__item">
+                                Traveling
+                            </li>
+                         
+                        </ul>
+                </div>
+            </div>
+        </section>
+        <section class="languages">
+            <div class="languages-wrap clearfix">
+                <div class="languages-icon"><img src="assets/img/lang.svg" alt="languages" class="languages-icon__img"></div>
+                <div class="languages-content">
+                        <h2 class="title">Languages</h2>
+                        <ul class="languages-content__list">
+                            <li class="language-content__item">
+                                <div>English</div>
+                                <span class="stars stars--large">
+                                        <span style="width: 50%" />
+                                </span>
+                            </li>
+                            <li class="language-content__item">
+                                    <div>Russian</div>
+                                    <span class="stars stars--large">
+                                            <span style="width: 90%" />
+                                    </span>
+                            </li>
+                            <li class="language-content__item">
+                                    <div>Ukraine</div>
+                                    <span class="stars stars--large">
+                                            <span style="width: 100%" />
+                                    </span></li>          
+                        </ul>
+                </div>
+            </div>
+        </section>
+        <section class="email">
+                <div class="email-wrap clearfix">
+                        <div class="email-icon"><img src="assets/img/email.svg" alt="mail" class="email-icon__img"></div>
+                        <div class="email-content">
+                                <form action="" class="send-form">
+                                       
+                                            <label><span>Email:</span> <input name="e-mail" type="text" class="e-mail"></label>
+                                                                            
+                                            <label><span>Message:</span> <textarea class="textmsg" name="text"></textarea></label>
+                                           <br>
+                                            <input type="submit" value="submit" class="submit">
+                                </form>
+                            
+                        </div>
+                    </div>
+        </section>
+        <footer class="footer"></footer>
+    </div>
+    <script src="assets/js/app.js" ></script>
+</body>
+</html>
