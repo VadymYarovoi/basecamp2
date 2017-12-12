@@ -33,7 +33,8 @@
  @return {Array}
 */
 function removeDuplicates(arr) {
-  let unique_array = arr.filter((elem, index, self) => index === self.indexOf(elem));
+  let unique_array;
+  unique_array = arr.filter((elem, index, self) => index === self.indexOf(elem));
   return unique_array;
 }
 
