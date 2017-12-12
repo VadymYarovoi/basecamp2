@@ -28,35 +28,64 @@
 
  */
 
+/*
+ @param {Array} arr
+ @return {Array}
+*/
 function removeDuplicates(arr) {
   let unique_array = arr.filter((elem, index, self) => index === self.indexOf(elem));
   return unique_array;
 }
 
+/*
+ @param {Array} arr1
+ @param {Array} arr2
+ @return {Array}
+*/
 function commonValues(arr1, arr2) {
-  let common_array = arr1.filter((elem, index) => arr2.includes(elem))
+  let common_array;
+  common_array = arr1.filter((elem, index) => arr2.includes(elem))
     .concat(arr2.filter(elem => arr1.includes(elem)))
     .filter((elem, index, self) => index === self.indexOf(elem));
   return common_array;
 }
 
+
+/*
+ @param {Array} arr1
+ @param {Array} arr2
+ @return {Array}
+*/
+
 function distinctValues(arr1, arr2) {
 
-  let distinct_array = arr1.filter(elem => !arr2.includes(elem))
+  let distinct_array;
+  distinct_array = arr1.filter(elem => !arr2.includes(elem))
     .concat(arr2.filter(elem => !arr1.includes(elem)))
     .filter((elem, index, self) => index === self.indexOf(elem));
 
   return distinct_array;
 }
 
+
+/*
+ @param {Number} arrSize
+ @return {Array}
+*/
+
 function generateArr(arrSize) {
-  let array = new Array(arrSize);
+  let array;
+  array = new Array(arrSize);
   for (let i = 0; i < array.length; i++) {
     array[i] = Math.floor((Math.random() * 100) + 1);
   }
   return array;
 }
 
+/*
+ @param {Number} elem
+ @return {Boolean}
+*/
 if (!Array.prototype.includes) {
   Array.prototype.includes = function(elem) {
     return this.indexOf(elem) !== -1;
