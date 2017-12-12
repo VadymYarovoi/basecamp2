@@ -1,3 +1,4 @@
+
 /*
 * 1. Remove duplicates.
 * Write a function that removes duplicate values from an array.
@@ -28,8 +29,8 @@ console.log(removeDuplicates(arr));
 *        commonValues([3, 4, 6, 3, 1], [5, 10, 7, 1, 3, 9, 8, 7]);     //  [3, 1]
 *
 * */
-var array1 = [3, 4, 6, 3, 1];
-var array2 = [5, 10, 7, 1, 3, 9, 8, 7];
+var array1 = [3, 4, 6, 3, 1],
+    array2 = [5, 10, 7, 1, 3, 9, 8, 7];
 
 function commonValues(array1, array2) {
     var i,
@@ -49,8 +50,8 @@ console.log(commonValues(array1, array2));
 * Example:
 *        distinctValues([3, 4, 6, 3, 1], [5, 10, 7, 1, 3, 9, 8, 7]);     //  [4, 6, 5, 10, 7, 9, 8]
  * */
-var array3 = [3, 4, 6, 3, 1];
-var array4 = [5, 10, 7, 1, 3, 9, 8, 7];
+var array3 = [3, 4, 6, 3, 1],
+    array4 = [5, 10, 7, 1, 3, 9, 8, 7];
 
 function distinctValues(array3, array4) {
     var items = [],
