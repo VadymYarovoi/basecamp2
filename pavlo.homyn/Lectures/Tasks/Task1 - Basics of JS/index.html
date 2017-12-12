@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Homework. Task 1</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Enter your text below:</h1>
+        <textarea id="user-text"></textarea>
+        <button id="button" type="button">Calculate</button>
+        <h2>Calculation results:</h2>
+        
+<!-- Next two blocks are hidden by default and will be visible after result of our 'if...else' check -->
+        
+        <h3 id="empty-textarea">Text you've entered has no words!</h3>
+        <div id="calc-results">
+            <p>Number of words: &lt;<span id="words-sum"></span>&gt;</p>
+            <p>Length of the maximal word: &lt;<span id="max-length-word"></span>&gt;</p>
+            <p>Length of the minimum word: &lt;<span id="min-length-word"></span>&gt;</p>
+            <p>Average length of words: &lt;<span id="average-length"></span>&gt;</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/task1.js"></script>
+</body>
+</html>

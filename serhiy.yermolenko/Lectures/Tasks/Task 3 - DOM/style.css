@@ -1,0 +1,73 @@
+#calendar-box {
+    font-family: 'Roboto','Tahoma', sans-serif;
+}
+.table {
+    text-align: center;
+    /* border-bottom: 3px solid #ccc; */
+}
+#table-calendar {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#table-calendar tr,
+#table-calendar td,
+#table-calendar th {
+    padding: 5px 10px;
+   /*  border: 1px solid #ddd !important; */
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+#table-calendar td:hover {
+    background-color: #bbc7d3;
+    cursor:pointer;
+}
+
+.today {
+    color: lightblue;
+    background-image: linear-gradient(to bottom, #fff, #eee);
+    box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+.other {
+    /* background-color: #eee; */
+    color: #98989a;
+}
+.linked {
+    background-color: #6599FF;
+}
+.linked a {
+    color: white;
+}
+
+.weekend {
+    color: red !important;
+    font-weight: bold;
+}
+
+#table-calendar th {
+    font-size: 13px;
+    border-bottom: 2px solid #ccc;
+    text-transform: uppercase;
+}
+
+h4{
+    width: 185px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.btn {
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+    background-image: linear-gradient(to bottom, #fff, #eee);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.chosen {
+    background-color: lightblue;
+    color: white;
+}

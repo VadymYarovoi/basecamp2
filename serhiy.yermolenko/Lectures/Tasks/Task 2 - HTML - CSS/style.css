@@ -1,0 +1,299 @@
+body {
+	box-sizing: border-box;
+	background: url("background1.jpg") repeat-y fixed;
+	background-size: 100%;
+	height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+textarea {
+	resize: none;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow:inset 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]{
+	font-weight: bold;
+	padding: 5px 10px;
+	color:#333;
+    background:white;
+    border: none;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, #fff, #ddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 2px white;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+progress {
+	color: blue;
+}
+
+.facebook img {
+	width: 16px;
+	height: 16px;
+}
+
+.telegram img {
+	width: 16px;
+	height: 16px;
+}
+
+.photo img {
+	width: 35%;
+	height: 350%;
+	border: 5px solid #2b17f2;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+.education span {
+}
+
+.line {
+	border-top: 2px solid #2b17f2;
+	margin: 10px 0;
+}
+
+.header {
+	display: flex;
+	background-color: #2b17f2;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.header span {
+	color: white;
+	margin: 0 10px;
+	font-size: 16px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.photo {
+	float: left;
+}
+
+.name {
+	float: center;
+	text-align: left;
+	margin-right: 30px;
+}
+
+#clear {
+	clear: both;
+}
+
+form {
+	display: grid;
+	margin: 10px auto;
+	grid-gap: 5px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 20px auto 20px;
+	grid-template-areas:
+	"l1  t1"
+	"l2  t2"
+	". but";
+}
+
+.label1, .label2 {
+	text-align: right;
+}
+
+.label1 {
+	grid-area: l1;
+}
+
+.label2 {
+	grid-area: l2;
+}
+
+.text1 {
+	grid-area: t1;
+}
+
+.text2 {
+	grid-area: t2;
+}
+
+.butt {
+	grid-area: but;
+}
+
+.container {
+	display: grid;
+	position: absolute;
+	right: 25%;
+	width: 50%;  
+	background-image: url("bg-lightl-890.jpg");
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 50px auto 200px;
+	grid-gap: 5px;
+	grid-template-areas: 
+	"h h h h h h"
+	"c c c c c c"
+	"f f f f f f";
+	padding: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+} 
+
+.header {
+	grid-area: h;
+	margin: 10px;
+}
+
+.content {
+	grid-area: c;
+	margin: 10px;
+}
+
+.footer {
+	grid-area: f;
+	margin: 10px;
+}
+
+.skills {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"aaa bbb ."
+	"ccc ddd .";
+	text-align: right;
+}
+
+.progressHTML {
+	grid-area: aaa;
+}
+
+.progressC {
+	grid-area: bbb;
+}
+
+.progressJS {
+	grid-area: ccc;
+}
+
+.progressSQL {
+	grid-area: ddd;
+}
+
+.interests {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"lit tra coo"
+	"spo dan mus";
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.literature {
+	grid-area: lit;
+}
+
+.traveling {
+	grid-area: tra;
+}
+
+.cooking {
+	grid-area: coo;
+}
+
+.sports {
+	grid-area: spo;
+}
+
+.dances {
+	grid-area: dan;
+}
+
+.music {
+	grid-area: mus;
+}
+
+.languages {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"eng rus ger";
+	text-align: right;
+}
+
+.english {
+	grid-area: eng;
+}
+
+.russian {
+	grid-area: rus;
+}
+
+.german {
+	grid-area: ger;
+}
+
+.literature,
+.traveling,
+.cooking,
+.sports,
+.dances,
+.music {
+	border: 1px solid #2b17f2;
+	border-radius: 10px;
+}
+
+.author{
+	font-size: 0.8em;
+	text-align: left;
+	font-style: italic;
+	color: darkgrey;
+}
+
+@media screen and (max-width: 1400px){
+	.header span {
+	font-size: 12px;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+	.languages {
+	justify-text: center;
+	grid-template-columns: 100%;
+	grid-template-rows: 50px 50px 50px;
+	grid-template-areas: 
+	"eng"
+	"rus"
+	"ger";
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.header span {
+	font-size: 10px;
+	}
+
+	.container {
+		right: 15%;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.container {
+		right: 0;
+		width: 100%;
+	}
+}

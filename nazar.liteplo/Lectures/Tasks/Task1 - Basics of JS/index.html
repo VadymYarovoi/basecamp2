@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task1</title>
+	<style>
+		.page{
+			width: 50%;
+			margin: 0 auto;			
+		}
+		.inputs:after {
+    	content: '';
+    	display: block;
+    	clear: both;
+		}
+		textarea{
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+
+			resize: none;
+		}
+		button{
+			display: block;
+			float: right;
+			margin:0;
+			padding: 2px 20px;
+		}
+		span{
+			font-weight: bold;
+		}		
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="inputs">
+			<h1>Text area:</h1>
+			<textarea id="textarea" rows="10"></textarea>
+			<button id="calculate">Calculate</button>				
+		</div>
+		<div class="outputs">
+			<p>Number​ ​of​ ​words &lt;<span id="word-number"></span>&gt;</p>
+			<p>Length​ ​of​ ​the​ ​maximum​ ​word &lt;<span id="max-word"></span>&gt;</p>
+			<p>Length​ ​of​ ​the​ ​minimum​ ​word &lt;<span id="min-word"></span>&gt;</p>
+			<p>Average​ ​length​ ​of​ ​words &lt;<span id="average"></span>&gt;</p>
+		</div>
+	</div>
+
+	<script src="task1.js"></script>
+</body>
+</html>

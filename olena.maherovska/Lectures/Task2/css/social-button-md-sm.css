@@ -1,0 +1,16 @@
+.social-button
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: white;
+
+}
+.social-button > li
+{
+    margin: 50px auto;
+    padding: 27px 20px;
+    width: 20px;
+    font-size: 0.6em;
+}
+
