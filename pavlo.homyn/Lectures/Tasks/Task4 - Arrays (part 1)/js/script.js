@@ -3,7 +3,8 @@
         Write a function that removes duplicate values from an array.
         Example:
         removeDuplicates([1, 3, 7, 1, 3, 9, 8, 7]);     //  [1, 3, 7, 9, 8]
-        
+*
+*       *** SOLUTION 1 ***    
 *   @param {Array} arr
 *   @returns {Array} newArr
 */
@@ -15,6 +16,14 @@ function removeDuplicates(arr) {
         }
     }
     return newArr;
+}
+/*
+*       *** SOLUTION 2 ***    
+*   @param {Array} arr
+*   @returns {Array}
+*/
+function removeDuplicates(arr) {
+	return Array.from(new Set(arr));
 }
 
 /**
@@ -47,6 +56,7 @@ function commonValues(arr1, arr2) {
 *   @param {Array} arr2
 *   @returns {Array} newArr
 */
+
 function distinctValues(arr1, arr2) {
     let b = arr1.concat(arr2),
         newArr = [];
