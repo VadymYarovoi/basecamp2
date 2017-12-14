@@ -87,7 +87,7 @@ function isBalanced(str, pairs){
 				if (~s.indexOf(scopes[j])){			// if s contains some of scopes's item do next:
 					s = s.replace(scopes[j], "")	// delete this part of s
 						ok = true;					// found flag
-						break;
+						//break;		// do not need this
 				}
 
 		i = ok ? 0 : i+=1;							// if some pair found go to start end do all again
