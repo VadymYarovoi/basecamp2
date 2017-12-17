@@ -72,17 +72,16 @@ function removeZeros(arr) {
         [ 1, [ 1, 1 ] ].sameStructureAs( [ [ 2, 2 ], 2 ] );
         [ 1, [ 1, 1 ] ].sameStructureAs( [ [ 2 ], 2 ] );
 *
-*   @param {Array} arr1 - Input array
-*   @param {Array} arr2 - Input array 2
+*   @param {Array} arr - Input array
 *   @param {Array} result - Array with true/false results from our comparison
 *   @returns {boolean}
 */
-function sameStructureAs(arr1, arr2) {
-	let result = arr1.map((item, i) => {
-        if (Array.isArray(item) || Array.isArray(arr2[i])) {
-    	   return Array.isArray(item) === Array.isArray(arr2[i]);
+Array.prototype.sameStructureAs = function(arr) {
+	let result = this.map((item, i) => {
+        if (Array.isArray(item) || Array.isArray(arr[i])) {
+            return Array.isArray(item) === Array.isArray(arr[i]);
         }
-        return typeof item === typeof arr2[i];
+        return typeof item === typeof arr[i];
     });  
     return result.every(item => item === true);
 }
