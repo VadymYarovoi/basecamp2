@@ -36,19 +36,18 @@ Array.prototype.myFilter = function(callback, context) {
  *   @param {Array} arr2 - array filled with zeros
  *   @param {Array} arr3 - concatenated array
  *
- *   @returns {Array} arr - transformed array
+ *   @returns {Array} - return concatenated array
  */
 
-var array = [7, 2, 3, 0, 4, 6, 0, 0, 13, 0, 78, 0, 0, 19, 14];
+let array = [7, 2, 3, 0, 4, 6, 0, 0, 13, 0, 78, 0, 0, 19, 14];
 
 function removeZeros(array) {
-    var arr = array.filter(function(x) {
+    let arr = array.filter(function(x) {
             return Number(x);
         }),
         arr2 = new Array(array.length - arr.length);
     arr2.fill(0);
-    var arr3 = arr.concat(arr2);
-    return arr3;
+    return arr.concat(arr2);
 }
 
 removeZeros(array); //  [7, 2, 3, 4, 6, 13, 78, 19, 14, 0, 0, 0, 0, 0, 0]
@@ -74,7 +73,7 @@ removeZeros(array); //  [7, 2, 3, 4, 6, 13, 78, 19, 14, 0, 0, 0, 0, 0, 0]
  */
 
 Array.prototype.sameStructureAs = function (other) {
-    var i;
+    let i;
 
     if (this.length !== other.length) {
         return false;
@@ -138,13 +137,12 @@ function maxZeroSequenceLength(array) {
     return result[lengths.indexOf(Math.max.apply(null, lengths))];
 }
 
-var array = [25, -35, 12, 6, 92, -115, 17, 2, 2, 2, -7, 2, -9, 16, 2, -11];
+let array = [25, -35, 12, 6, 92, -115, 17, 2, 2, 2, -7, 2, -9, 16, 2, -11];
 
 maxZeroSequenceLength(array); // return result[]
 
-
-/*
- * 5. Balancing parentheses.
+/**
+ 5. Balancing parentheses.
  * Write a piece of code to validate that a supplied string is balanced.
  * You will be given a string to validate, and a second string, where each pair of characters
  * defines an opening and closing sequence that needs balancing.
@@ -155,4 +153,20 @@ maxZeroSequenceLength(array); // return result[]
  *
  * isBalanced("(Sensei [says] yes!)", "()[]")  //  true
  * isBalanced("(Sensei [says) no!]", "()[]")   //  false
+ *
+ * @param {string} string
+ * @param {string} condition
+ *
+ * @returns {Boolean} true of false
  */
+
+function isBalanced(string, x) {
+    let brackets = string.split(/[^()\[\]]/gi).join('');
+
+    return (brackets.length % 2 != 0) ||
+    (brackets.search(/\[\)\]/g) != -1) ||
+    (brackets.search(/\[\(\]/g)  != -1) ||
+    (brackets.search(/\(\]\)/g) != -1) ||
+    (brackets.search(/\(\[\)/g) != -1) ? false: true;
+
+}
