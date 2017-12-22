@@ -44,7 +44,7 @@ function consoleTree(obj, level, curBranch){
 *
 * @param {Object} proto  Prototype of a new object
 * @param {Object} props  Includes properties that must be added to new object
-* @returns {Object} result
+* @return {Object} result
 *
 **/
 
@@ -74,7 +74,7 @@ Object.create = function(proto, props){
 *   Create a prototype method that given a nested path, either return the value or undefined.
 *
 * @param {String} way
-* @returnrs {...} Object properties by the way or undefined
+* @return {...} Object properties by the way or undefined
 *
 **/
 
@@ -141,7 +141,7 @@ Object.prototype.hash = function findProp(way){
 *
 * @param {Object} config
 * @param {Object} def
-* @returns {Object} newConfig
+* @return {Object} newConfig
 *
 **/
 
@@ -166,7 +166,7 @@ function defaults(config, def){
 /**
 * Sets error status
 * @param {String} msg   Error message
-* @returns {Object} Error
+* @return {Object} Error
 *
 **/
 
@@ -196,7 +196,7 @@ function send(config){
 *  Function that creates copy of an object
 *
 *  @param {Object} obj
-*  @returns {Object} result
+*  @return {Object} result
 *
 **/
 function deepCopy(obj){
@@ -225,7 +225,7 @@ function deepCopy(obj){
 *    is not an object, it should be ignored.
 *
 * @param {Array} objects
-* @returns {Object} result
+* @return {Object} result
 *
 **/
 
@@ -254,7 +254,7 @@ function mix (...objects){
 *
 *
 * @param {Object} thisArg
-* @returns {Object} fn
+* @return {Object} fn
 *
 **/
 
