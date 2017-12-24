@@ -69,7 +69,7 @@ let newObj = Object.newCreate(obj);
 
 Object.prototype.hash = function(prop) {
     const obj = this;
-    prop.split('.').reduce((key, keyProp) => {
+    return prop.split('.').reduce((key, keyProp) => {
         return key && typeof key == 'object' ? key[keyProp] : undefined;
     }, obj);
 }
