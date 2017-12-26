@@ -247,9 +247,17 @@ mix({
 /*
  * @return {object}
  */
-function mix() {
-    return Object.assign(...arguments);
-};
+function mix (...objects){
+     let result = {};
+     for(let i of objects){
+         for(let j in i){
+              if(i.hasOwnProperty(j) && !result.hasOwnProperty(j)){
+                 result[j] = i[j];
+             }
+         }
+     }
+   return result;
+ }
 
 //===========================================================================================
 /*
