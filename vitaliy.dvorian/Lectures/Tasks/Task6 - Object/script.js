@@ -22,30 +22,7 @@
  * @param {object} obj 
  */
 function traverseTree(obj) {
-    var i,
-        space = '';
-    var str = JSON.stringify(obj);
-    var arr = str.split('');
-    arr.pop();
-    arr.shift();
-    for (i = 0; i < arr.length; i++) {
-        if (arr[i] == '"' || arr[i] == ',') {
-            arr.splice(i, 1);
-            i--;
-        }
-    }
-    for (i = 0; i < arr.length; i++) {
-        if (arr[i] == '}') {
-            console.log(space + '}');
-            space = space.slice(0, space.length - 2);
-            continue;
-        }
-        console.log(space + arr[i] + arr[i + 1] + arr[i + 2]); //output 3 characters per line
-        i += 2;
-        if (arr[i] == '{') {
-            space += '\t';
-        }
-    }
+    return JSON.stringify(obj, "", 4);
 }
 //===========================================================================================
 /*
