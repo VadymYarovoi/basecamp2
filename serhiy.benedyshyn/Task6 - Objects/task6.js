@@ -122,30 +122,14 @@ Object.mix = function (...objects){
 * 6. Power .bind().
 * Overrode the native Function.prototype.bind method by a new one that will allow you to rebind context multiple times.
 *
-* @param {object} toBind
-* @param {object} args
-*/
-function Singleton(toBind, args){
-    if (Singleton.instance){ 
-        Singleton.instance.toBind = toBind;
-        Singleton.instance.args = args;
-        return Singleton.instance;
-    }
-    this.toBind = toBind;
-    this.args = args;
-
-    Singleton.instance = this;
-}
-
 /*
 * @param {object} toBind
 * @param {object} _this
 */
 Function.prototype.bind = function(toBind){
-    let _this = this, helper = new Singleton(toBind, arguments[0]);
-    return function(){
-        return _this.apply(helper.toBind, helper.args)
-    }
+    let _this = this._this || this, f = () => _this.call(toBind);
+    f._this = _this;
+    return f;
 }
 
 
