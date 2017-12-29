@@ -5,7 +5,9 @@
  */
 function RemoveDuplicate(arr)
 {
-    var obj = {}, i, res = [];    
+    var obj = {},
+        i,
+        res = [];    
       for (i = 0; i < arr.length; i++) {        
         obj[arr[i]] = true;
       }        
@@ -25,7 +27,13 @@ function RemoveDuplicate(arr)
  */
 function Intersection(arrayOne, arrayTwo)
 {
-    var first = arrayOne.sort(function(a,b){return a - b;}), second = arrayTwo.sort(function(a,b){return a - b;}), i = 0 , j = 0, obj = {}, res = [];
+    var first = arrayOne.sort(function(a,b){return a - b;}),
+        second = arrayTwo.sort(function(a,b){return a - b;}),
+        i = 0,
+        j = 0,
+        obj = {},
+        res = [],
+        a;
     while(i != first.length && j != second.length)
     {
         if(first[i] < second[j])
@@ -59,7 +67,14 @@ function Intersection(arrayOne, arrayTwo)
  */
 function SymmetricalDifference(arrayOne, arrayTwo)
 {   
-    var first = arrayOne.sort(function(a,b){return a - b;}), second = arrayTwo.sort(function(a,b){return a - b;}), i = 0 , j = 0, obj = {}, fake= {}, res = [];
+    var first = arrayOne.sort(function(a,b){return a - b;}),
+        second = arrayTwo.sort(function(a,b){return a - b;}),
+        i = 0,
+        j = 0,
+        obj = {},
+        fake= {},
+        res = [],
+        value;
     while(i != first.length && j != second.length)
     {
         if(first[i] < second[j])
@@ -108,7 +123,8 @@ function SymmetricalDifference(arrayOne, arrayTwo)
  */
 function generateArr(arrSize)
 {
-    var res = new Array(arrSize), i;
+    var res = new Array(arrSize),
+        i;
     for(i = 0; i < arrSize; i++)
     {
         res[i] = Math.round(Math.random() * (arrSize * 10));
