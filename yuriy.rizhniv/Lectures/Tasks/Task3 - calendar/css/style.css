@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#container{
+	width: 392px;
+	border: 1px solid #d0d0d0;
+	background: #f1f1f1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px; 
+	margin-left: -196px;
+}
+.cal-header{
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	background: #484848;
+	color: #fff;
+}
+.cal-header span{
+	font-size: 16px;
+	padding: 10px;
+	cursor: pointer;
+}
+.day-names{
+	display: flex;
+	justify-content: space-around;
+}
+.day, #dates span{
+	width: 50px;
+	height: 30px;
+	background: #fff;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.day{
+	background: #c5c5c5;
+	line-height: 30px;
+}
+#dates span{
+	height: 50px;
+	display: inline-block;
+	line-height: 50px;
+	margin: 3px;
+	font-size: 24px;
+}
+.weekend{
+	color: red;
+}
+.currentDate{
+	color: #5eb3ff;
+	line-height: 20px;
+	position: relative;
+	width: 55px;
+	height: 55px;
+}
+.currentDate:after{
+	content: 'TODAY';
+	font-size: 10px;
+	color: #000;
+	font-weight: bold;
+	position: absolute;
+	top: 15px;
+	left: 8px;
+}
+.nonActive{
+	color: #ccc;
+}
+.cell{
+	cursor: pointer;
+}
+#dates .that{
+	background-color: #5eb3ff;
+	color: #fff;
+}
