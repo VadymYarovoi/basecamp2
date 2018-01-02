@@ -113,7 +113,7 @@ Array.prototype.sameStructureAs = function(arr)
 function isBalanced(str, rule)
 {
     var bracket = str.split('').filter(val => rule.includes(val)), i, open = [];   
-    for(var i = 0; i < bracket.length; i++)
+    for(i = 0; i < bracket.length; i++)
     {
         if(bracket[i] == '(' || bracket[i] == '[')
         {
