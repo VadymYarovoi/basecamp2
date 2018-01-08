@@ -1,0 +1,110 @@
+:root{
+	--color: #777;
+	--color-ligth: #ddd;
+	--color-blue: #77a;
+	--color-red: #a77;
+	--color-success: #ada;
+	--color-error: #daa;
+	--a: 150px;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	height: 100vh;
+}
+
+button{
+	background: var(--color-ligth);
+	border: 3px solid var(--color);
+	border-radius: 12px;
+	height: 100px;
+	width: 161.8px;
+	color: var(--color);
+	font-family: sans-serif;
+	font-size: 14pt;
+}
+
+button:hover{
+	background: var(--color-success);
+}
+
+.flexed{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+.table{
+	height: 60%;
+}
+
+.grid{
+	display: inline-flex;
+}
+.grid > .column{
+	display: inline-block;
+}
+.grid > .column > .cell{
+	box-shadow: inset 0px 0px 0px 3px #444;
+	border-radius: 10%;
+	height: var(--a);
+	width: var(--a);
+	background: var(--color-ligth);
+	transition: all .25s;
+}
+
+.grid > .column > .cell.hover{
+	transform: scale(1.05, 1.05);
+	background: var(--color-success);
+}
+.grid > .column > .cell.occupied.hover{
+	transform: scale(1.05, 1.05);
+	background: var(--color-error);
+}
+
+.panel{
+  	border-radius: 15px;
+	box-shadow: inset 0px 0px 0px 2px var(--color);
+	height: 30%;
+	width: 20%;
+	margin: auto;
+}
+
+.shape{
+	width: var(--a);
+	height: var(--a);
+	border-radius: 10%;
+}
+.shape:hover{
+	box-shadow: inset 0px 0px 1px 1px rgba( 100, 200, 100, 0.75 );
+}
+
+.cross{
+	background: var(--color-blue);
+	border-radius: 50px;
+	height: var(--a);
+	position: relative;
+	width: 20px;
+	transform: rotate(45deg);
+}
+.cross:after{
+	background: var(--color-blue);
+	border-radius: 50px;
+	content: "";
+	height: 20px;
+	left: -65px;
+	position: absolute;
+	top: 65px;
+	width: var(--a);
+}
+
+.zero{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	box-shadow: inset 0px 0px 0px 20px var(--color-red);
+}
