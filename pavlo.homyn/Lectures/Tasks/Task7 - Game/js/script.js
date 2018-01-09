@@ -63,7 +63,7 @@ window.onload = function init() {
                     diagonal(arrOfSigns, table, "X");
                     diagonalReverse(arrOfSigns, table, "X");
                     if (every(arrOfSigns[parseInt(x / row.length)], "X")) {
-                        table.rows[parseInt(x / row.length)].style.backgroundColor = "black";
+                        table.rows[parseInt(x / row.length)].style.backgroundColor = "limegreen";
                         setTimeout(() => {reload("X")}, 1000);
                     }
                     if (column(arrOfSigns, t[x].cellIndex, "X")) {
@@ -77,7 +77,7 @@ window.onload = function init() {
                     diagonal(arrOfSigns, table, "0");
                     diagonalReverse(arrOfSigns, table, "0");
                     if (every(arrOfSigns[parseInt(x / row.length)], "0")) {
-                        table.rows[parseInt(x / row.length)].style.backgroundColor = "black";
+                        table.rows[parseInt(x / row.length)].style.backgroundColor = "limegreen";
                         setTimeout(() => {reload("0")}, 1000);
                     }
                     if (column(arrOfSigns, t[x].cellIndex, "0")) {
@@ -101,7 +101,7 @@ window.onload = function init() {
         }
         if (newArr.length === 3) {
             for (let i = 0; i < table.rows.length; i++) {
-                table.rows[newArr[i][0]].cells[newArr[i][1]].style.backgroundColor = "black";
+                table.rows[newArr[i][0]].cells[newArr[i][1]].style.backgroundColor = "limegreen";
             }
             setTimeout(() => {reload(sign)}, 1000);
         }
@@ -117,7 +117,7 @@ window.onload = function init() {
         }
         if (newArr.length === 3) {
             for (let i = 0; i < table.rows.length; i++) {
-                table.rows[newArr[i][0]].cells[newArr[i][1]].style.backgroundColor = "black";
+                table.rows[newArr[i][0]].cells[newArr[i][1]].style.backgroundColor = "limegreen";
             }
             setTimeout(() => {reload(sign)}, 1000);
         }
@@ -138,7 +138,7 @@ window.onload = function init() {
 
     function paintColumns(table, index){
         for (let i = 0; i < table.rows.length; i++) {
-            table.rows[i].cells[index].style.backgroundColor = "black";
+            table.rows[i].cells[index].style.backgroundColor = "limegreen";
         }
     }
 
