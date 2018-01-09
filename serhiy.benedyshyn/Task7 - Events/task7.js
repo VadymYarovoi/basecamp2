@@ -186,7 +186,7 @@ class Zero extends Shape{
 /***********************************************************************************************************
 *	Variables declaration
 */
-	var g = new Grid('table'),				// In the parameter specifies an 'id' of DOM-element
+	var g = new Grid('table'),				// In the parameter specifies an 'id' of parentNode
 		o = new Cross(),				// New <div class='cross'></div>
 		btn = document.createElement('button'),		// Refresh button
 		panel = document.getElementById('panel');
