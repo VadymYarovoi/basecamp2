@@ -1,0 +1,39 @@
+.wrap {
+    width: 1300px;
+}
+
+.table {
+    float: left;
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    margin: -5px;
+    background-image: url(img/cell.png);
+}
+
+.row {
+    display: inline-block;
+}
+
+#tic {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/tic.png);
+    float: left;
+}
+
+#tac {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/tac.png);
+    float: right;
+}
+
+.place {
+    height: 200px;
+    width: 400px;
+    display: inline-block;
+    margin: 100px 160px;
+}
