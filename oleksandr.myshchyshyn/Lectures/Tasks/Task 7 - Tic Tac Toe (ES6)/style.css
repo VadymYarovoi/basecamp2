@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 29%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.box {
+  width: 30%;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  padding: 15px 70px;
+  background-color: lightskyblue;
+  border: 1px solid black;
+}
