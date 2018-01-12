@@ -1,0 +1,49 @@
+
+body{
+    background-color: #eaf2ef;
+}
+body > .dragging{
+    position: absolute;
+}
+.game{
+    text-align: center;
+}
+.cards{
+    width: 210px;
+    margin: 10px auto ;
+}
+.card{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+.card-x{
+    background-image: url(img/x.png);
+}
+.card-o{
+    background-image: url(img/o.png);
+}
+.massage{
+   margin-bottom: 10px;
+   font-size: 20px;
+}
+.game-table{
+    margin: 0 auto;
+}
+.field{
+    width: 105px;
+    height: 105px;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+}
+
+.field.overlaps{
+    background-color: gray;
+}
+
+.restart{
+    margin: 15px auto;
+    width: 200px;
+}
