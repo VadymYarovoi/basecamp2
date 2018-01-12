@@ -1,0 +1,112 @@
+/**********************************
+**     GLOBAL STYLES
+**********************************/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/**********************************
+**     MAIN CONTAINER STYLES
+**********************************/
+.wrapper {
+    display: flex;
+}
+.wrapper > div {
+    margin: 10px;
+}
+.wrapper > div:first-child {
+    margin-right: 0;
+}
+
+/**********************************
+**     CHAT SECTION STYLES
+**********************************/
+.chat {
+    flex: 3;
+}
+.chat-header {
+    border-radius: 20px 0 0 0;
+}
+.chat-header, .users-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #666;
+    color: #fff;
+    height: 40px;
+}
+.chat-window {
+    border: 1px solid #666;
+    font-size: 0.75em;
+    height: 93vh;
+    overflow: auto;
+}
+.chat-window > p {    
+    margin: 5px;
+}
+.chat-window > p > span {
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+/**********************************
+**     USERS SECTION STYLES
+**********************************/
+.users-block {
+    flex: 1;
+}
+.users-header {
+    border-radius: 0 20px 0 0;
+}
+.users-window {
+    border: 1px solid #666;
+    height: 85vh;
+    overflow: auto;
+}
+
+/**********************************
+**     ADD USER BUTTON STYLES
+**********************************/
+.add-user-btn {
+    display: block;
+    font-size: 1.05em;
+    background-color: #999;
+    border: 1px solid #999;
+    color: #fff;
+    width: 70%;
+    height: 40px;
+    border-radius: 30px;
+    margin: 10px auto;
+    font-weight: bold;
+    outline: none;
+}
+.add-user-btn:hover {
+    background-color: #fff;
+    color: #999;
+}
+
+/**********************************
+**     GENERATED USER STYLES
+**********************************/
+.new-user {
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #999;
+}
+.new-user-image {
+    border-radius: 50%;
+}
+.new-user-info {
+    padding: 0 0 0 20px;
+}
+.new-user-info > h3 {
+    margin: 4px 0;
+    color: limegreen;
+}
+.new-user-info > h5 {
+    margin: 0;
+}
