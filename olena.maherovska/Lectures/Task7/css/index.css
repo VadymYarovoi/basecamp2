@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+}
+#container {
+  width: 400px;
+  height: 400px;
+  border: 3px solid black;
+  margin: 70px 140px 70px 40px;
+  float: left;
+}
+.cell {
+  width: calc(394px / 3);
+  height: calc(394px / 3);
+  border: 1px solid black;
+  float: left;
+}
+
+#values {
+  margin-top: 73px;
+  display: flex;
+  height: 70px;
+}
+.cross, .zero {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+.cross {
+  color: red;
+}
+.zero {
+  color: green;
+}
