@@ -1,0 +1,100 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.chat {
+  width: 60%;
+  height: 91vh;
+  border: 1px solid #ded9d9;
+  border-radius: 25px;
+}
+
+.users {
+  width: 30%;
+  height: 91vh;
+  position: relative;
+  border: 1px solid #ded9d9;
+  border-radius: 25px;
+}
+
+.heading {
+  background-color: #36f7dcfa;
+  padding: 15px;
+  border-radius: 25px 25px 0px 0;
+}
+.heading span {
+  font: 600 14px/14px sans-serif;
+}
+
+.add {
+  position: absolute;
+  left: 33%;
+  color: #fff;
+  background-color: #337ab7;
+  border: 1px solid #74beff;
+  padding: 10px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.user-container {
+  overflow: auto;
+  height: 78vh;
+}
+
+.user {
+  display: flex;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  border-color: teal;
+}
+
+.user img {
+  border-radius: 50%;
+  display: block;
+  margin: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 0px 0px 20px;
+}
+
+span {
+  display: block;
+}
+
+h1 {
+  font: 600 20px 'Kavivanar';
+  color: #71c771;
+}
+
+.message {
+  display: flex;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.message img {
+  display: block;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.conversation {
+  height: 83vh;
+  overflow: auto;
+}
