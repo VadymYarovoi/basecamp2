@@ -62,12 +62,12 @@ function loadData(url){
 
 			xhr.open('get', 'https://randomuser.me/api/');
 
-			xhr.onload = function(){								// when xhr finished loading data
+			xhr.onload = function(){					// when xhr finished loading data
 				if (this.status < 200 && this.status >= 300 ) {
-			  		rejected( this.statusText ); 					// error callback
+			  		rejected( this.statusText ); 			// error callback
 				} 
 				else {
-					resolve(this.response);							// success callback
+					resolve(this.response);				// success callback
 				}
 			}
 
@@ -99,7 +99,7 @@ async function textMe(user){
 
 	  	setTimeout( () => {
 			newMessage(user, message);
-			audio.play();								// notification of received message
+			audio.play();							// notification of received message
 	  	}, freeze);
 }
 
@@ -122,7 +122,7 @@ function newUser(user){
 	 	city = document.createElement('div'),
 	 	phone = document.createElement('div');
 
-	 														// make tree
+	 										// make tree
 	card.appendChild(left_column);
 		left_column.appendChild(photo);
 	card.appendChild(right_column);
@@ -130,7 +130,7 @@ function newUser(user){
 		right_column.appendChild(city);
 		right_column.appendChild(phone);
 
-															// add styles and fillings
+											// add styles and fillings
 	card.className = "user-info flexed";
 		left_column.className = "left-col flexed";
 
@@ -150,7 +150,7 @@ function newUser(user){
 
 		textMe(user);
 
-	users.insertBefore(card, users.firstChild);				// insert into users container first
+	users.insertBefore(card, users.firstChild);					// insert into users container first
 }
 /*
 *	Synchronous function that build div-elements of message and appends it to messages container.
