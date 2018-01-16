@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+.wrap{
+    margin: 20px;
+}
+
+.chat {
+    border: 1px black solid;
+    position: absolute;
+    height: 600px;
+    width: 850px;
+    border-radius: 25px;
+    overflow: auto;
+}
+
+.users {
+    border: 1px black solid;
+    position: absolute;
+    height: 600px;
+    width: 410px;
+    margin-left: 900px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.title {
+    height: 50px;
+    background-color: #EEE;
+    line-height: 50px;
+    font-size: 23px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.newUser{
+    margin: 20px 130px;
+    width: 150px;
+    height: 35px;
+    background-color: #3E84C0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.userBlock{
+    height: 100px;
+    margin: 10px;
+    border: #5A5D96 2px solid;
+    border-radius: 15px;
+}
+
+.userList {
+    height: 470px;
+    overflow: auto;
+}
+
+.imgUser{
+    width: 70px;
+    height: 70px;
+    margin: 10px 30px 0 10px;
+    border-radius: 35px;
+    float: left;
+}
+
+.nameUser{
+    text-transform: capitalize;
+    display: inline-block;
+    color: #86C186;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cityUser{
+    text-transform: capitalize;
+    margin: 5px 0px 0px 1px;
+}
+
+.blockMessage{
+    margin: 10px;
+    padding-bottom: 15px;
+}
+
+.imgChat{
+    width: 50px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.nameChat{
+    text-transform: capitalize;
+    position: absolute;
+    margin-left: 15px;
+    font-style: italic;
+}
+
+.textChat{
+    margin: -30px 0px 0px 80px;
+    display: inline-block;
+    padding-top: 5px;
+}
