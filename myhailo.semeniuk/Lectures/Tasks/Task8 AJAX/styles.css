@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1050px;
+    padding: 20px;
+}
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.messages-block{
+    float: left;
+    width: 650px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    border-top-width: 0;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.users-block{
+    float: right;
+    width: 370px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    border-top-width: 0;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.block-header{
+    background-color: grey;
+    margin: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.message-content{
+    margin: 20px;
+    width: 610px;
+}
+
+.author-img, .user-img{
+    float: left;
+    width: 100px;
+}
+
+.message{
+    float: right;
+    width: 500px;
+}
+
+.message-text{
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.user{
+    width: 330px;
+    margin: 10px;
+}
+
+.user-img{
+    border-radius: 5px;
+}
+
+.user-info{
+    float: right;
+    width: 210px;
+    margin-right: 10px;
+}
+
+button[name='add-user']{
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.user-info span{
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
