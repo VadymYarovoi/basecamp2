@@ -1,0 +1,55 @@
+
+.messages, .users{
+    vertical-align: top;
+    border: 1px solid #dddfe2;
+    height: 500px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.title{
+    font-size: 14px;
+    color: #464a4e;
+    background-color: #e7e8ea;
+    border-color: #dddfe2;
+    padding:5px 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;    
+}
+.messageList{
+    overflow-y: auto;
+    height: 90%;
+}
+.message{
+    margin: 10px 0;
+    padding: 10px;
+}
+.userList{
+    overflow-y: auto;
+    height: 80%;
+    position: relative;
+}
+.button-wrap{
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+.card{
+    flex-direction: row;
+    font-size: 16px;
+    margin: 5px;
+}
+.card-title{
+    margin: 5px 0;
+}
+.card p{
+    margin: 0;
+    font-size: 14px;
+}
+.card-img-left {
+    width: 72px;
+    height: 72px;
+    margin: 5px;
+}
