@@ -1,0 +1,91 @@
+.container {
+	padding: 10px;
+}
+
+.playfield {
+	border-collapse: collapse;
+	display: table;
+	float: left;
+   margin-right: 50px;
+   margin-bottom: 30px;
+}
+
+.refresh {
+   padding: 5px;
+   font-size: 16px;
+}
+
+.row {
+	display: table-row;
+}
+
+img {
+	height: 50px;
+	width: 50px;
+}
+
+h1, button {
+   font-family: 'Joti One', cursive;
+}
+
+.field {
+	border: 3px solid lightgrey;
+	display: table-cell;
+	height: 50px;
+	width: 50px;
+   padding: 5px;
+}
+
+.imagefield {
+	display: block;
+	float: center;
+   margin-bottom: 20px;
+}
+
+.wrapper {
+   margin: 20px;
+   padding: 5px;
+}
+
+.draggable {
+   cursor: pointer;
+} 
+
+.field1 {
+	border-left: 0;
+	border-top: 0;
+}
+
+.field2 {
+	border-top: 0;
+}
+
+.field3 {
+	border-right: 0;
+	border-top: 0;
+}
+
+.field4 {
+	border-left: 0;
+}
+
+.field6 {
+	border-right: 0;
+}
+
+.field7 {
+	border-bottom: 0;
+	border-left: 0;
+}
+
+.field8 {
+	border-bottom: 0;
+}
+
+.field9 {
+	border-bottom: 0;
+	border-right: 0;
+}
+
+
+

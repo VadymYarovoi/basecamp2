@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>task7 - Game</title>
+	
+	<script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.closest"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1>Tick-Tack-Toe</h1>
+		<div class="playfield" id="playfield">
+			<div class="row">
+				<div class="field field1 droppable" id="field1"></div>
+				<div class="field field2 droppable" id="field2"></div>
+				<div class="field field3 droppable" id="field3"></div>
+			</div>
+			<div class="row">
+				<div class="field field4 droppable" id="field4"></div>
+				<div class="field field5 droppable" id="field5"></div>
+				<div class="field field6 droppable" id="field6"></div>
+			</div>
+			<div class="row">
+				<div class="field field7 droppable" id="field7"></div>
+				<div class="field field8 droppable" id="field8"></div>
+				<div class="field field9 droppable" id="field9"></div>
+			</div>			
+		</div>
+		<div class="wrapper">
+			<div class="imagefield" id = "players">
+				<img src="images/X_test.jpg" alt="X" class="player1 draggable" id="X">
+				<img src="images/0_test.jpg" alt="0" class="player2 draggable" id="0">
+			</div>
+			<button class="refresh" type="button" id="refresh">Refresh</button>
+		</div>
+	</div>
+	<script async type="text/javascript" src="task7.js"></script>
+</body>
+</html>
+
